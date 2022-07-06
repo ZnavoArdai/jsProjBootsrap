@@ -1,0 +1,185 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+background-size: cover;
+background-repeat: no-repeat;
+color: #2f3946;
+}
+body{
+  min-width: 400px;
+}
+
+
+.nav-container-z{
+display:flex;
+justify-content:space-around;
+align-items: center;
+min-height:8vh;
+font-family: 'Poppins', sans-serif;
+background-color: #2f3946;
+
+}
+
+.navbar-z{
+display: flex;
+
+}
+.logo-z{
+color: #ffffff;
+letter-spacing: 5px;
+font-size: 22px;
+}
+.navbar-z{
+display: flex;
+justify-content: space-around;
+width: 30%;
+}
+
+.navbar-z a{
+text-decoration: none;
+color:#ffffff;
+letter-spacing: 2px;
+font-weight: bold;
+font-size: 13px;
+}
+.navbar-z a:hover{
+color:#ffffff; 
+border-bottom: 2px solid #ffffff; 
+font-size: 20px;
+transition:1s;
+}
+
+
+.navbar-z li{
+list-style: none;
+
+}
+
+.burger-z{
+color: #ffffff;
+display: none;
+}
+svg{
+width: 2vw;
+background-color:  #3d495a;
+}
+.footerContainer-z{
+background-color:  #2f3946; 
+position:absolute;
+bottom:0px;
+width: 100%;
+
+}
+.footerList-z{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5vh;
+
+}
+.footerList-z li{
+list-style: none;
+padding-top: 3vh;
+}
+svg:hover{
+transform:rotate(360deg);
+transition: 2s;
+
+}
+.showCase{
+  grid-area:main;
+  background-image:url("/images/homepage/img1.png");
+
+  animation-name:showcase;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+height:400px;
+}
+
+@keyframes showcase{
+  25%{  background-image:url("/images/homepage/img5.png");
+  }
+  50%{  background-image:url("/images/homepage/img4.png");
+
+  }
+  75%{  background-image:url("/images/homepage/img1.png");
+
+  }
+  100%{  background-image:url("/images/homepage/img5.png");
+
+  }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+body{
+overflow-x: hidden;
+}
+.navbar-z{
+position:fixed;
+right: 0;
+top: 8vh;
+height:40vh;
+background-color:#2f3946;
+display: flex;
+flex-direction: column;
+justify-content:start;
+align-items: center;
+gap:20px;
+width:40%;
+transform: translateX(100%);
+transition: transform 2s;
+  } 
+
+
+.navbar-z a{
+color: #ffffff;
+letter-spacing: 1.2px;
+font-weight: bold;
+font-size: 8px;
+}
+
+  .burger-z{
+    display:block;
+    cursor: pointer;
+  }
+
+ svg{
+width: 4vw;
+}
+
+
+
+}
+
+
+
+
+
+
+.navbar-active-z{
+transform: translateX(0%);
+}
+
+
+
+
+@keyframes slid_li{
+from{transform: translateX(100%);
+  opacity: 0;
+}
+to{transform: translateX(0%);
+  opacity: 1;
+}
+}
+
+
+
+
+.table-z{
+
+}
