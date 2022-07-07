@@ -93,7 +93,7 @@ transition: 2s;
   background-image:url("/images/homepage/img1.png");
 
   animation-name:showcase;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 height:400px;
 }
@@ -152,7 +152,20 @@ font-size: 8px;
 width: 4vw;
 }
 
+.table-z{
+  font-size:10px;
+}
 
+#tbod>tr>td>img{
+  width: 50px;
+}
+.containerTable-z{
+  overflow: scroll;
+}
+
+tr,th,td{
+  min-width:4px;
+}
 
 }
 
