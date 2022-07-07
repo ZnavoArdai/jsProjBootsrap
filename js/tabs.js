@@ -12,17 +12,12 @@ async function getDevice(){
         
     }
     finally{
-
     }
 }
 
 
-getDevice().then((res)=>{console.log(res)})
 
 
-function cards(){
-
-}
 let counter=1;
 
 
@@ -64,9 +59,19 @@ printhere.innerHTML+=`<div class="col-lg-4">
 if(counter==6){
     counter=1
 }
+
+let btns=document.getElementsByClassName("btn-z");
+for (const i of btns) {
+    i.addEventListener("click",async()=>{
+alert("device deleted")
+    })
+}
+
+
         });
      
     })
+
 } catch (error) {
     
 }
@@ -74,28 +79,21 @@ finally{
     loading.innerHTML=""
 }
 
-},3000)   
+},2000)   
 }
 
 
-let btns=document.getElementsByClassName("btn-z");
 
-    for (const i of btns) {
-        i.addEventListener("click",async()=>{
+async function deleteDevices(device_id){
+  
     try {
-        const result=await fetch(APIDEVICE `/${i}`,{method:"DELETE"})
+        const result=await fetch(APIDEVICE `/deleteById/${device_id}`,{method:"DELETE"})
         return result.json();
-
-    } catch (error) {
+    }
+     catch (error) {
         
     }
-        
-    
-        })
-    
-    }
-
-
+}
 
 
 

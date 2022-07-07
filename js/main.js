@@ -11,7 +11,6 @@ const li=document.querySelectorAll('.navbar-z li')
 
         })
 
-        
     }) 
 }
 slaide();
