@@ -17,6 +17,13 @@ transition: 2s;
 background-color: #2f3946;
 
 }
+
+#logo-z:hover{
+  transform:rotate(180deg);
+  transition: 2s ease-in-out;
+  background-color: #2f3946;
+
+  }
 .showCase{
   background-image:url("/images/homepage/img1.png");
   animation-name:showcase;
@@ -43,65 +50,25 @@ height:400px;
 
 }
 
+.containerTable-z{
+
+  overflow: scroll;
+}
+
 
 
 @media screen and (max-width: 768px) {
-  .main-container {
-    height: 5vh;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .borger {
-    background-color: white;
-    width: 10vw;
-    height: 0.5vh;
-    margin-bottom: 0.5vh;
-  }
-  .main-container:active {
-    height: max-content;
-    transition-duration: 1s;
-  }
-  .main-container:hover {
-    height: max-content;
-    transition-duration: 1s;
-  }
-  .bigimagcontainer {
-    background-position: 0% 30%;
-    height: 25vh;
-  }
-  .navul {
-    font-size: 1.5vh;
-  }
-  .listcontainer {
-    display: flex;
-    flex-direction: column;
+  .containerTable-z>table {
+
+    font-size:5px;
   }
 }
 
 
 
 
-@keyframes slid_li{
-from{transform: translateX(100%);
-  opacity: 0;
-}
-to{transform: translateX(0%);
-  opacity: 1;
-}
-}
 
 
-
-
-
-<section class="my-5">
-    <div class="container my-3">
-        <h1 class="card-title text-center my-5">BALI-PHONE</h1>
-    </div>
-
-    <div id="loading"></div>
-  </section>
 
 
   
