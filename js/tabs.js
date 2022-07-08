@@ -35,9 +35,9 @@ try {
 printhere.innerHTML+=`<div class="col-lg-4">
 <img src="/images/homepage/smg${counter++}.png" class="card-img-top img-fluid"/>
 <div class="card-body">
-  <h5 class="card-title mb-2">brand : ${dev.brand} </h5>
+  <h5 class="card-title mb-2">Brand : ${dev.brand} </h5>
   <P class="card-text">
- color : ${dev.color}
+ Color : ${dev.color}
   </P>
   <P class="card-text">
   createdAt:${dev.createdAt}
@@ -45,12 +45,12 @@ printhere.innerHTML+=`<div class="col-lg-4">
   <P class="card-text">
   id : ${dev.id}
   </P> <P class="card-text">
-  isAvailable:${dev.isAvailable}
+  is Available:${dev.isAvailable}
   <P class="card-text">
-  price : ${dev.price}
+  Price : ${dev.price}
   </P>
   <P class="card-text">
-  ram : ${dev.ram}
+  Ram : ${dev.ram}
   </P>
   <a href="#!" class="btn btn-dark btn-z">Delete</a>
 </div>

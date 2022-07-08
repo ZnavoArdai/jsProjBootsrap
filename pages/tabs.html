@@ -8,80 +8,190 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="/js/tabs.js"></script>
+  </head>
 <body>
-<nav class="nav-container-z sticky-top">
-<div class="logo-z">
-    <h4>BALI-PHONE</h4>
-</div>
-<ul class="navbar-z">
-    <li><a href="/index.html">HOME</a></li>
-    <li><a href="/pages/tabs.html">TABS</a></li>
-    <li><a href="/pages/info.html">INFO</a></li>
-    <li><a href="/pages/add.html">ADD</a></li>
-    <li><a href="/pages/about.html">ABOUT</a></li>
-    <li><a href="/pages/contact.html">CONTACT</a></li>
-</ul>
-<div class="burger-z">☰</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/images/homepage/logo.jpg" alt="..." height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/tabs.html">TABS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/info.html">INFO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/add.html">ADD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/contact.html">CONTACT</a>
+        </li>
+   
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<section class="my-5">
-    <div class="container my-3">
-        <h1 class="card-title text-center my-5">BALI-PHONE</h1>
-    </div>
-
-    <div id="loading"></div>
-  </section>
-
-
-  
-
-
-
-  <section class="p-5">
-    <div class="container">
-      <div class="row text-center" id="printhere">
-        
-        </div>
-      </div>
-    </div>
-  </section>
-
-    
-
-
-
-  <footer class="bg-dark text-center text-white">
-    <div class="container p-4">
-      <section class="mb-4">
-        <a class="btn btn-outline-light  m-1" href="#!" role="button" >
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg></a></li>
-
-        </a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg></a></li>
-
-        </a>
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg></a></li>
-
-        </a>
-  
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a></li>
-
-        </a>
+<section class="container">
+  <section class="my-5">
+  <div class="container my-3">
+   <h1 class="card-title text-center my-5 title-z">BALI-PHONE</h1>
+ </div>
+ <div id="loading"></div>
 
       </section>
+</section>
+ 
+
+
+<section class="p-5 container">
+  <div class="container">
+    <div class="row text-center" id="printhere">
+      
+      </div>
     </div>
-  </footer>
-   
+  </div>
+</section>
+
+
+<div class="mt-5 ">
+
+  <footer class="bg-dark text-center text-white">
+  <div class="container p-4 pb-0 ">
+    <section class="mb-4 footer-z ">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f text-light">FACEBOOK</i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter text-light">TWITTER</i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram text-light">INSTAGRAM</i
+      ></a>
+
+  
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github text-light ">GIT-HUB</i
+      ></a>
+    </section>
+  </div>
+  <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+  </div>
+</footer>
+  
+</div>
 <script src="/js/main.js"> </script>
-<script src="/js/tabs.js"></script>
 </body>
 </html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -57,12 +57,3 @@ async function deleteUser(user_id){
 }
 
 
-
-
-// age: 35
-// email: "dollie.hensley@undefined.org"
-// index: 0
-// name: {last: 'Hensley', first: 'Dollie'}
-// phone: "+1 (904) 421-3160"
-// picture: "http://placehold.it/32x32"
-// _id: "605acace4ab389d8ed54c496"
