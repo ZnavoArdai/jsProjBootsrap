@@ -51,9 +51,36 @@ height:400px;
 }
 
 .containerTable-z{
-
   overflow: scroll;
+
 }
+
+
+
+
+.aboutmaintext{
+  line-height: 2rem;
+  animation-name: linemove;
+  animation-duration: 4s;
+  animation-direction:alternate-reverse;
+    }
+
+
+    @keyframes linemove{
+
+    from{  line-height:2rem;
+     
+
+    }
+    to{
+      line-height: 1px;
+
+    }
+    }
+
+    /* .screen_z{
+      height:10vh;
+    } */
 
 
 
@@ -61,6 +88,11 @@ height:400px;
   .containerTable-z>table {
 
     font-size:5px;
+  }
+
+  .aboutmaintext{
+li
+    font-size: 10px;
   }
 }
 
