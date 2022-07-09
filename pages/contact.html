@@ -49,6 +49,14 @@
     </div>
   </div>
 </nav>
+<section class="container">
+    <section class="my-5">
+    <div class="container my-3">
+     <h1 class="card-title text-center my-5 title-z">BALI-PHONE</h1>
+   </div>
+          </section>
+  </section>  
+    <section class="container">
 <section class="bg-light text-center text-white mt-5">
     <div class="container p-4">
       <div class="container-fluid ">
@@ -67,22 +75,22 @@
 
             <div class="container text-center">
             <h1>Contact us</h1>
-            <form>
+            <form onsubmit="">
             <div class="form-group has-success">
-            <label for="Name"></label>
-            <input type="name" class="form-control" id="Name" placeholder="Name">
+            <label for="subject"></label>
+            <input type="name" class="form-control" id="subject22" placeholder="subject" required >
             </div>
             <div class="form-group has-warning">
             <label for="Email1"> </label>
-            <input type="email" class="form-control" id="Email1" placeholder="Email">
+            <input type="email" class="form-control" id="Email1" placeholder="Email" required>
             </div> 
             <div class="form-group has-error">
             <label for="Contry"></label>
-            <input type="text" class="form-control" id="Contry" placeholder="Contry">
+            <input type="text" class="form-control" id="Contry" placeholder="Contry" >
             </div> 
             <div class="form-group">
                 <label for=" Email1msg">Message:</label>
-                <input type="textarea" class="form-control" id="Email1msg"  >
+                <input type="textarea" class="form-control" id="Email1msg" required  >
                 </div>
             <div class="checkbox">
             <label> Agree
@@ -90,8 +98,10 @@
             </label>
             </div>
              
-            <button type="submit" class="btn btn-info" onclick="sendMail()">Submit Information</button>
-            <button type="button" class="btn btn-info" onclick="sendMail()">Submit Information</button>
+            <button type="button" class="btn btn-info" onclick="sendMail()" >Save</button>
+            <div id="emailsender" class="mt-5"></div>
+            
+
 
             </form>
              

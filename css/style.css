@@ -34,6 +34,7 @@ height:400px;
 
 .title-z{
   color: #2f3946;
+  letter-spacing: 20px;
 }
 @keyframes showcase{
   25%{  background-image:url("/images/homepage/img5.png");
@@ -78,9 +79,7 @@ height:400px;
     }
     }
 
-    /* .screen_z{
-      height:10vh;
-    } */
+
 
 
 
@@ -91,8 +90,12 @@ height:400px;
   }
 
   .aboutmaintext{
-li
     font-size: 10px;
+    line-height:1rem;
+  }
+
+  .title-z{
+    letter-spacing: 15px;
   }
 }
 

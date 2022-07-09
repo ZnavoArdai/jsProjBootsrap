@@ -16,6 +16,12 @@ async function getUsers(){
 
 let counter=1;
 onload=function printUsers(){
+    loading2.innerHTML=`<img src="https://freefrontend.com/assets/img/css-loaders/loading.gif" class="card-img-top img-fluid"/>
+`
+
+this.setTimeout(()=>{
+
+
     try {
         getUsers().then((res)=>{
             
@@ -41,8 +47,10 @@ for (const i of btns) {
         
     }
     finally{
-
+loading2.innerHTML=""
     }
+
+},2500)
 }
 
 
